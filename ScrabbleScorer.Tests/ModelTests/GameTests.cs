@@ -10,20 +10,21 @@ namespace ScrabbleScorer.Tests
 
     
     [TestMethod]
-    public void CalculatesScrabbleScore_ReturnsScoreForSingleLetter_Int()
+    public void LetterScore_ReturnsScoreForSingleLetter_Int()
     {
       char input = 'a';
       ScrabbleScore firstScore = new ScrabbleScore();
       int result = firstScore.LetterScore(input);
       Assert.AreEqual(1, result);
-    }
+    } //code that passes switch case
 
     [TestMethod]
-    public void NameOfMethodWeAreTesting2_DescriptionOfBehavior_ExpectedReturnValue()
+    public void WordScore_ReturnsScoreForEntireWord_Int()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      // we can also use the arrange, act, assert organization in any test. 
-      //CollectionAssert.AreEqual(ExpectedResult, CodeToTest);
-    }
+      string input = "hi";
+      ScrabbleScore firstWord = new ScrabbleScore();
+      int result = firstWord.WordScore(input);
+      Assert.AreEqual(5,result);
+    } //testing return of score for string. test that runs through switch case every instance of letter appearing in word and adds them
   }
 }
