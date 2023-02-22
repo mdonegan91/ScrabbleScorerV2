@@ -5,7 +5,7 @@ namespace ScrabbleScorer.Models
 {
   public class ScrabbleScore
   {
-    private string _currentWord = "";
+    private string _currentWord = ""; // the next line will do this automatically
 
     public string CurrentWord{get; set;}
 
