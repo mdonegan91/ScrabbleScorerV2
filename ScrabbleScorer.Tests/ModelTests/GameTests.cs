@@ -12,9 +12,9 @@ namespace ScrabbleScorer.Tests
     [TestMethod]
     public void CalculatesScrabbleScore_ReturnsScoreForSingleLetter_Int()
     {
-      string input = "a";
-      ScrabbleScore firstScore = new ScrabbleScore(letter);
-      int result = NewFunction(input);
+      char input = 'a';
+      ScrabbleScore firstScore = new ScrabbleScore();
+      int result = firstScore.LetterScore(input);
       Assert.AreEqual(1, result);
     }
 
