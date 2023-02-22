@@ -38,5 +38,6 @@ switch(letter.ToUppercase())
 {
 case A: case E: case I: case O: case U: case L: case N: case R: case S: case T:
   return 5;
-case 
+case S: case F:
+return 2;
   }
