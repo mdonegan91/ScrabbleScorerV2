@@ -6,17 +6,18 @@ namespace ScrabbleScorer.Models
   public class ScrabbleScore
   {
 
-    public int WordScore(string word) {
+    public static int WordScore(string word) {
       int score = 0;
       foreach(char myChar in word) 
       {
-        score += LetterScore(myChar);
+        score += LetterScore(myChar
+        );
       }
       return score;
-    }
+    }// passes test for identifying letters with in word and adding score
 
 
-    public int LetterScore(char letter)//recognizes score per letter. doing this before writing code to run through switch loop every instance a letter appears in word
+    public static int LetterScore(char letter)//recognizes score per letter. doing this before writing code to run through switch loop every instance a letter appears in word
     {    //switch takes in letter and jumps to case point where letter occurs. return breaks switch loop and stops it from running from case to case -- needs to have default option (last line -1)
       switch(Char.ToUpper(letter)) 
       {
