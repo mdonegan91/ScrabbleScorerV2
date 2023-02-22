@@ -37,5 +37,6 @@ for each letter in word:
 switch(letter.ToUppercase())
 {
 case A: case E: case I: case O: case U: case L: case N: case R: case S: case T:
-  score += 
-}
+  return 5;
+case 
+  }

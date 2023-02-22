@@ -5,26 +5,25 @@ using System.Collections.Generic;
 namespace ScrabbleScorer.Tests
 {
   [TestClass]
-  // public class GameTests : IDisposable
-  // {
-  //   public void Dispose()
-  //   {
-  //     // Code inside this method is run between each test.
-  //   }
+  public class GameTests
+  {
+
     
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void CalculatesScrabbleScore_ReturnsScoreForSingleLetter_Int()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      // we can also use the arrange, act, assert organization in any test. 
-      Assert.AreEqual(ExpectedResult, CodeToTest);
+      string input = "a";
+      ScrabbleScore firstScore = new ScrabbleScore(letter);
+      int result = NewFunction(input);
+      Assert.AreEqual(1, result);
     }
 
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void NameOfMethodWeAreTesting2_DescriptionOfBehavior_ExpectedReturnValue()
     {
       // any necessary logic to prep for test; instantiating new classes, etc.
       // we can also use the arrange, act, assert organization in any test. 
-      CollectionAssert.AreEqual(ExpectedResult, CodeToTest);
+      //CollectionAssert.AreEqual(ExpectedResult, CodeToTest);
     }
   }
+}
