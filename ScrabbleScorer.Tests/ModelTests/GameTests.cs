@@ -1,16 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using ScrabbleScorer.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Tests
+namespace ScrabbleScorer.Tests
 {
   [TestClass]
-  public class ClassNameTests : IDisposable
-  {
-    public void Dispose()
-    {
-      // Code inside this method is run between each test.
-    }
+  // public class GameTests : IDisposable
+  // {
+  //   public void Dispose()
+  //   {
+  //     // Code inside this method is run between each test.
+  //   }
     
     [TestMethod]
     public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
@@ -28,4 +28,3 @@ namespace ProjectName.Tests
       CollectionAssert.AreEqual(ExpectedResult, CodeToTest);
     }
   }
-}

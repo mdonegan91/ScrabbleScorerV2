@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace ScrabbleScorer.Models
 {
   public class ClassName
   {

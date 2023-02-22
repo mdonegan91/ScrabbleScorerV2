@@ -1,8 +1,7 @@
 using System;
-using ClassName.Models;
-using System.Collections.Generic;
+// using System.Collections.Generic;
 
-namespace ClassName
+namespace ScrabbleScorer
 {
   class Program
   {
