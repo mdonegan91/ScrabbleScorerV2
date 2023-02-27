@@ -1,6 +1,6 @@
 # Scrabble Scorer
 
-#### By Molly Donegan, Sarah Andyshak, David Jandron, Erin Timlin, Jackson Levine, Asia Kaplanyan
+#### By Molly Donegan, Brishna Bakshev & Kai Clausen
 
 ## Technologies Used
 
