@@ -1,13 +1,13 @@
 using System;
-using System.Collections.Generic;
 
 namespace ScrabbleScorer.Models
 {
   public class ScrabbleScore
   {
-    private string _currentWord = ""; // the next line will do this automatically
+    // private string _currentWord = ""; // the next line will do this automatically
 
     public string CurrentWord{get; set;}
+    public int score { get; set;}
 
     public static int WordScore(string word) {
       int score = 0;
@@ -42,6 +42,5 @@ namespace ScrabbleScorer.Models
         return 0;
       }
     }
-    // properties, constructors, methods, etc. go here
   }
 }
